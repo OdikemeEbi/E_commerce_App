@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.youtube_ecommerce.app-mergeDebugResources-90:/values-mdpi-v4/values-mdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ALABOR CLETUS\\.gradle\\caches\\transforms-3\\4378c7faff2e2eb4d3220071fe179ecb\\transformed\\jetified-payments-core-20.19.5\\res\\values-mdpi-v4\\values-mdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                }
+            ]
+        }
+    ]
+}

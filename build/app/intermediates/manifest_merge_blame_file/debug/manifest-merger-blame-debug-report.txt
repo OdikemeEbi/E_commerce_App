@@ -1,0 +1,872 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.youtube_ecommerce"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\android\app\src\debug\AndroidManifest.xml:7:5-66
+15-->C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\android\app\src\debug\AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+16-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+17-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+17-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- See https://developer.android.com/training/package-visibility/declaring for more details. -->
+18-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+18-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+19    <queries>
+19-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:8:5-12:15
+20
+21        <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+22        <package android:name="com.android.chrome" />
+22-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:11:9-54
+22-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:11:18-51
+23        <!-- Added to check the default browser that will host the AuthFlow. -->
+24        <intent>
+24-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:13:9-17:18
+25            <action android:name="android.intent.action.VIEW" />
+25-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:17-69
+25-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:25-66
+26
+27            <data android:scheme="http" />
+27-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+27-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+28        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+29        <package android:name="com.google.android.apps.maps" />
+29-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\59cc5571c2bebedf639b6b64d2a139d5\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+29-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\59cc5571c2bebedf639b6b64d2a139d5\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+30    </queries> <!-- Required by older versions of Google Play services to create IID tokens -->
+31    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+31-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\7025cd93587554bd215c33244382ee59\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
+31-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\7025cd93587554bd215c33244382ee59\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
+32    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+32-->[com.google.android.gms:play-services-measurement-api:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\5106768933e73254c3b1c2b7171a9075\transformed\jetified-play-services-measurement-api-21.2.1\AndroidManifest.xml:25:5-79
+32-->[com.google.android.gms:play-services-measurement-api:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\5106768933e73254c3b1c2b7171a9075\transformed\jetified-play-services-measurement-api-21.2.1\AndroidManifest.xml:25:22-76
+33
+34    <uses-feature
+34-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\59cc5571c2bebedf639b6b64d2a139d5\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+35        android:glEsVersion="0x00020000"
+35-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\59cc5571c2bebedf639b6b64d2a139d5\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+36        android:required="true" />
+36-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\59cc5571c2bebedf639b6b64d2a139d5\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+37
+38    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+38-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:26:5-110
+38-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:26:22-107
+39
+40    <permission
+40-->[androidx.core:core:1.9.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\33cb2a52db049ce092deb6d8f76d5ffe\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+41        android:name="com.example.youtube_ecommerce.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.9.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\33cb2a52db049ce092deb6d8f76d5ffe\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.9.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\33cb2a52db049ce092deb6d8f76d5ffe\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.example.youtube_ecommerce.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.9.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\33cb2a52db049ce092deb6d8f76d5ffe\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.9.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\33cb2a52db049ce092deb6d8f76d5ffe\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+45
+46    <application
+47        android:name="android.app.Application"
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.9.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\33cb2a52db049ce092deb6d8f76d5ffe\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+49        android:debuggable="true"
+50        android:icon="@mipmap/ic_launcher"
+51        android:label="Youtube Ecommerce" >
+52        <activity
+53            android:name="com.example.youtube_ecommerce.MainActivity"
+54            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+55            android:exported="true"
+56            android:hardwareAccelerated="true"
+57            android:launchMode="singleTop"
+58            android:theme="@style/Theme.AppCompat.Light"
+59            android:windowSoftInputMode="adjustResize" >
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+68                android:name="io.flutter.embedding.android.NormalTheme"
+69                android:resource="@style/NormalTheme" />
+70
+71            <intent-filter>
+72                <action android:name="android.intent.action.MAIN" />
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+82            android:name="flutterEmbedding"
+83            android:value="2" />
+84
+85        <service
+85-->[:firebase_auth] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+86            android:name="com.google.firebase.components.ComponentDiscoveryService"
+86-->[:firebase_auth] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+87            android:directBootAware="true"
+87-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ea39f342bf1645a9d43372302f3d0356\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+88            android:exported="false" >
+88-->[com.google.firebase:firebase-analytics-ktx:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\213e184d4f453a0259fc1f411311380d\transformed\jetified-firebase-analytics-ktx-21.2.1\AndroidManifest.xml:10:13-37
+89            <meta-data
+89-->[:firebase_auth] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+90-->[:firebase_auth] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[:firebase_auth] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+92            <meta-data
+92-->[:firebase_storage] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+93-->[:firebase_storage] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-126
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_storage] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+95            <meta-data
+95-->[:cloud_firestore] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+96                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+96-->[:cloud_firestore] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[:cloud_firestore] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+98            <meta-data
+98-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+99                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+99-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+101            <meta-data
+101-->[:firebase_core] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+102                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+102-->[:firebase_core] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:firebase_core] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-analytics-ktx:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\213e184d4f453a0259fc1f411311380d\transformed\jetified-firebase-analytics-ktx-21.2.1\AndroidManifest.xml:11:13-13:85
+105                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+105-->[com.google.firebase:firebase-analytics-ktx:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\213e184d4f453a0259fc1f411311380d\transformed\jetified-firebase-analytics-ktx-21.2.1\AndroidManifest.xml:12:17-126
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-analytics-ktx:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\213e184d4f453a0259fc1f411311380d\transformed\jetified-firebase-analytics-ktx-21.2.1\AndroidManifest.xml:13:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:69:13-71:85
+108                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+108-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:70:17-109
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:71:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\f96db47e0483c988b1d3c3d9c369b782\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+111                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+111-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\f96db47e0483c988b1d3c3d9c369b782\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\f96db47e0483c988b1d3c3d9c369b782\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-firestore:24.4.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\bb17de863933c0ecfd9ac5f141bcc335\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:19:13-21:85
+114                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+114-->[com.google.firebase:firebase-firestore:24.4.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\bb17de863933c0ecfd9ac5f141bcc335\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:20:17-111
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-firestore:24.4.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\bb17de863933c0ecfd9ac5f141bcc335\transformed\jetified-firebase-firestore-24.4.5\AndroidManifest.xml:21:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\7025cd93587554bd215c33244382ee59\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+117                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+117-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\7025cd93587554bd215c33244382ee59\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\7025cd93587554bd215c33244382ee59\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+120                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+120-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\668b9f04740fded8f9067f80569acbe8\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+123                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+123-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\668b9f04740fded8f9067f80569acbe8\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\668b9f04740fded8f9067f80569acbe8\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+125            <meta-data
+125-->[com.google.android.gms:play-services-measurement-api:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\5106768933e73254c3b1c2b7171a9075\transformed\jetified-play-services-measurement-api-21.2.1\AndroidManifest.xml:31:13-33:85
+126                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+126-->[com.google.android.gms:play-services-measurement-api:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\5106768933e73254c3b1c2b7171a9075\transformed\jetified-play-services-measurement-api-21.2.1\AndroidManifest.xml:32:17-139
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.android.gms:play-services-measurement-api:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\5106768933e73254c3b1c2b7171a9075\transformed\jetified-play-services-measurement-api-21.2.1\AndroidManifest.xml:33:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\5411046b4265c3b68ec8488119dd0225\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+129                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+129-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\5411046b4265c3b68ec8488119dd0225\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\5411046b4265c3b68ec8488119dd0225\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\03759ca7ed55e5e7983d9ce7b612fa34\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+132                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+132-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\03759ca7ed55e5e7983d9ce7b612fa34\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\03759ca7ed55e5e7983d9ce7b612fa34\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+134        </service>
+135        <service
+135-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+136            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+136-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+137            android:exported="false"
+137-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+138            android:permission="android.permission.BIND_JOB_SERVICE" />
+138-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+139        <service
+139-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+140            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+140-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+141            android:exported="false" >
+141-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+142            <intent-filter>
+142-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+143                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+143-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+143-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+144            </intent-filter>
+145        </service>
+146
+147        <receiver
+147-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+148            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+148-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+149            android:exported="true"
+149-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+150            android:permission="com.google.android.c2dm.permission.SEND" >
+150-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+151            <intent-filter>
+151-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+152                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+152-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+152-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+153            </intent-filter>
+154        </receiver>
+155
+156        <provider
+156-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+157            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+157-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+158            android:authorities="com.example.youtube_ecommerce.flutterfirebasemessaginginitprovider"
+158-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+159            android:exported="false"
+159-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+160            android:initOrder="99" />
+160-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+161        <provider
+161-->[:image_picker_android] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+162            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+162-->[:image_picker_android] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+163            android:authorities="com.example.youtube_ecommerce.flutter.image_provider"
+163-->[:image_picker_android] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+164            android:exported="false"
+164-->[:image_picker_android] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+165            android:grantUriPermissions="true" >
+165-->[:image_picker_android] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+166            <meta-data
+166-->[:image_picker_android] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+167                android:name="android.support.FILE_PROVIDER_PATHS"
+167-->[:image_picker_android] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+168                android:resource="@xml/flutter_image_picker_file_paths" />
+168-->[:image_picker_android] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+169        </provider>
+170
+171        <activity
+171-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:8:9-12:58
+172            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+172-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:9:13-80
+173            android:exported="false"
+173-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:10:13-37
+174            android:theme="@style/StripePaymentSheetDefaultTheme"
+174-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:11:13-66
+175            android:windowSoftInputMode="adjustResize" />
+175-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:12:13-55
+176        <activity
+176-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:13:9-17:58
+177            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+177-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:14:13-82
+178            android:exported="false"
+178-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:15:13-37
+179            android:theme="@style/StripePaymentSheetDefaultTheme"
+179-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:16:13-66
+180            android:windowSoftInputMode="adjustResize" />
+180-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:17:13-55
+181        <activity
+181-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:18:9-21:69
+182            android:name="com.stripe.android.paymentsheet.addresselement.AddressElementActivity"
+182-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:19:13-97
+183            android:exported="false"
+183-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:20:13-37
+184            android:theme="@style/StripePaymentSheetDefaultTheme" />
+184-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:21:13-66
+185        <activity
+185-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:22:9-25:69
+186            android:name="com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity"
+186-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:23:13-105
+187            android:exported="false"
+187-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:24:13-37
+188            android:theme="@style/StripePaymentSheetDefaultTheme" />
+188-->[com.stripe:paymentsheet:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\81a10d4a8a267c5e2175bcb38f4aec0f\transformed\jetified-paymentsheet-20.19.5\AndroidManifest.xml:25:13-66
+189        <activity
+189-->[com.stripe:link:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ba166292edb52fca470300798482f59a\transformed\jetified-link-20.19.5\AndroidManifest.xml:8:9-13:58
+190            android:name="com.stripe.android.link.LinkActivity"
+190-->[com.stripe:link:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ba166292edb52fca470300798482f59a\transformed\jetified-link-20.19.5\AndroidManifest.xml:9:13-64
+191            android:exported="false"
+191-->[com.stripe:link:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ba166292edb52fca470300798482f59a\transformed\jetified-link-20.19.5\AndroidManifest.xml:10:13-37
+192            android:label="@string/link"
+192-->[com.stripe:link:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ba166292edb52fca470300798482f59a\transformed\jetified-link-20.19.5\AndroidManifest.xml:11:13-41
+193            android:theme="@style/LinkBaseTheme"
+193-->[com.stripe:link:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ba166292edb52fca470300798482f59a\transformed\jetified-link-20.19.5\AndroidManifest.xml:12:13-49
+194            android:windowSoftInputMode="adjustResize" />
+194-->[com.stripe:link:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ba166292edb52fca470300798482f59a\transformed\jetified-link-20.19.5\AndroidManifest.xml:13:13-55
+195        <activity
+195-->[com.stripe:payments-ui-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\b45ee5bd10c567bb348ec0ca79153cc8\transformed\jetified-payments-ui-core-20.19.5\AndroidManifest.xml:8:9-11:69
+196            android:name="com.stripe.android.ui.core.cardscan.CardScanActivity"
+196-->[com.stripe:payments-ui-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\b45ee5bd10c567bb348ec0ca79153cc8\transformed\jetified-payments-ui-core-20.19.5\AndroidManifest.xml:9:13-80
+197            android:exported="false"
+197-->[com.stripe:payments-ui-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\b45ee5bd10c567bb348ec0ca79153cc8\transformed\jetified-payments-ui-core-20.19.5\AndroidManifest.xml:10:13-37
+198            android:theme="@style/StripePaymentSheetDefaultTheme" />
+198-->[com.stripe:payments-ui-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\b45ee5bd10c567bb348ec0ca79153cc8\transformed\jetified-payments-ui-core-20.19.5\AndroidManifest.xml:11:13-66
+199        <activity
+199-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:15:9-18:57
+200            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+200-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:16:13-76
+201            android:exported="false"
+201-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:17:13-37
+202            android:theme="@style/StripeDefaultTheme" />
+202-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:18:13-54
+203        <activity
+203-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:19:9-22:57
+204            android:name="com.stripe.android.view.PaymentMethodsActivity"
+204-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:20:13-74
+205            android:exported="false"
+205-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:21:13-37
+206            android:theme="@style/StripeDefaultTheme" />
+206-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:22:13-54
+207        <activity
+207-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:23:9-26:57
+208            android:name="com.stripe.android.view.PaymentFlowActivity"
+208-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:24:13-71
+209            android:exported="false"
+209-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:25:13-37
+210            android:theme="@style/StripeDefaultTheme" />
+210-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:26:13-54
+211        <activity
+211-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:27:9-31:58
+212            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+212-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:28:13-78
+213            android:exported="false"
+213-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:29:13-37
+214            android:theme="@style/StripeDefaultTheme"
+214-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:30:13-54
+215            android:windowSoftInputMode="adjustResize" />
+215-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:31:13-55
+216        <activity
+216-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:32:9-35:61
+217            android:name="com.stripe.android.view.PaymentRelayActivity"
+217-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:33:13-72
+218            android:exported="false"
+218-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:34:13-37
+219            android:theme="@style/StripeTransparentTheme" />
+219-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:35:13-58
+220        <!--
+221        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+222        launched the browser Activity will also handle the return URL deep link.
+223        -->
+224        <activity
+224-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:41:9-45:61
+225            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+225-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:42:13-85
+226            android:exported="false"
+226-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:43:13-37
+227            android:launchMode="singleTask"
+227-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:44:13-44
+228            android:theme="@style/StripeTransparentTheme" />
+228-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:45:13-58
+229        <activity
+229-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:46:9-63:20
+230            android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity"
+230-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:47:13-88
+231            android:exported="true"
+231-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:48:13-36
+232            android:launchMode="singleTask"
+232-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:49:13-44
+233            android:theme="@style/StripeTransparentTheme" >
+233-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:50:13-58
+234            <intent-filter>
+234-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:51:13-62:29
+235                <action android:name="android.intent.action.VIEW" />
+235-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:17-69
+235-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:25-66
+236
+237                <category android:name="android.intent.category.DEFAULT" />
+237-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:54:17-76
+237-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:54:27-73
+238                <category android:name="android.intent.category.BROWSABLE" />
+238-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:55:17-78
+238-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:55:27-75
+239
+240                <!-- Must match `DefaultReturnUrl#value`. -->
+241                <data
+241-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+242                    android:host="payment_return_url"
+242-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+243                    android:path="/com.example.youtube_ecommerce"
+243-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:60:21-53
+244                    android:scheme="stripesdk" />
+244-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+245            </intent-filter>
+246        </activity>
+247        <activity
+247-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:64:9-67:57
+248            android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity"
+248-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:65:13-114
+249            android:exported="false"
+249-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:66:13-37
+250            android:theme="@style/StripeDefaultTheme" />
+250-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:67:13-54
+251        <activity
+251-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:68:9-71:66
+252            android:name="com.stripe.android.googlepaylauncher.StripeGooglePayActivity"
+252-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:69:13-88
+253            android:exported="false"
+253-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:70:13-37
+254            android:theme="@style/StripeGooglePayDefaultTheme" />
+254-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:71:13-63
+255        <activity
+255-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:72:9-75:66
+256            android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity"
+256-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:73:13-90
+257            android:exported="false"
+257-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:74:13-37
+258            android:theme="@style/StripeGooglePayDefaultTheme" />
+258-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:75:13-63
+259        <activity
+259-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:76:9-79:66
+260            android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity"
+260-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:77:13-103
+261            android:exported="false"
+261-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:78:13-37
+262            android:theme="@style/StripeGooglePayDefaultTheme" />
+262-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:79:13-63
+263        <activity
+263-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:80:9-83:62
+264            android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity"
+264-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:81:13-107
+265            android:exported="false"
+265-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:82:13-37
+266            android:theme="@style/PayLauncherDefaultTheme" />
+266-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:83:13-59
+267        <activity
+267-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:84:9-87:61
+268            android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity"
+268-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:85:13-97
+269            android:exported="false"
+269-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:86:13-37
+270            android:theme="@style/StripeTransparentTheme" />
+270-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:87:13-58
+271        <activity
+271-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:29:9-46:20
+272            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+272-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:30:13-80
+273            android:excludeFromRecents="true"
+273-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:31:13-46
+274            android:exported="true"
+274-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:32:13-36
+275            android:launchMode="singleTask"
+275-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:33:13-44
+276            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+276-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:34:13-72
+277            <intent-filter>
+277-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:35:13-45:29
+278                <action android:name="android.intent.action.VIEW" />
+278-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:17-69
+278-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:25-66
+279
+280                <category android:name="android.intent.category.DEFAULT" />
+280-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:54:17-76
+280-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:54:27-73
+281                <category android:name="android.intent.category.BROWSABLE" />
+281-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:55:17-78
+281-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:55:27-75
+282
+283                <data
+283-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+284                    android:host="firebase.auth"
+284-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+285                    android:path="/"
+285-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:60:21-53
+286                    android:scheme="genericidp" />
+286-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+287            </intent-filter>
+288        </activity>
+289        <activity
+289-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:47:9-64:20
+290            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+290-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:48:13-79
+291            android:excludeFromRecents="true"
+291-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:49:13-46
+292            android:exported="true"
+292-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:50:13-36
+293            android:launchMode="singleTask"
+293-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:51:13-44
+294            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+294-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:52:13-72
+295            <intent-filter>
+295-->[com.google.firebase:firebase-auth:21.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\06519bee0fee4ec7e1ef6ab9482de950\transformed\jetified-firebase-auth-21.2.0\AndroidManifest.xml:53:13-63:29
+296                <action android:name="android.intent.action.VIEW" />
+296-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:17-69
+296-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:25-66
+297
+298                <category android:name="android.intent.category.DEFAULT" />
+298-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:54:17-76
+298-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:54:27-73
+299                <category android:name="android.intent.category.BROWSABLE" />
+299-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:55:17-78
+299-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:55:27-75
+300
+301                <data
+301-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+302                    android:host="firebase.auth"
+302-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+303                    android:path="/"
+303-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:60:21-53
+304                    android:scheme="recaptcha" />
+304-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+305            </intent-filter>
+306        </activity>
+307        <activity
+307-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:21:9-64:20
+308            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity"
+308-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:22:13-109
+309            android:exported="true" >
+309-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:23:13-36
+310            <intent-filter>
+310-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:24:13-63:29
+311                <action android:name="android.intent.action.VIEW" />
+311-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:17-69
+311-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:52:25-66
+312
+313                <category android:name="android.intent.category.DEFAULT" />
+313-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:54:17-76
+313-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:54:27-73
+314                <category android:name="android.intent.category.BROWSABLE" />
+314-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:55:17-78
+314-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:55:27-75
+315
+316                <!-- Returning from app2app: return_url is triggered to reopen web AuthFlow and poll accounts. -->
+317                <data
+317-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+318                    android:host="link-accounts"
+318-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+319                    android:pathPrefix="/com.example.youtube_ecommerce/authentication_return"
+320                    android:scheme="stripe-auth" />
+320-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+321
+322                <!-- Returning from app2app: return_url is triggered to reopen native AuthFlow and poll accounts. -->
+323                <data
+323-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+324                    android:host="link-native-accounts"
+324-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+325                    android:pathPrefix="/com.example.youtube_ecommerce/authentication_return"
+326                    android:scheme="stripe-auth" />
+326-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+327
+328                <!-- End of web AuthFlow success and cancel URIs that begin with "stripe-auth://link-accounts/{app-id}/...” -->
+329                <data
+329-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+330                    android:host="link-accounts"
+330-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+331                    android:path="/com.example.youtube_ecommerce/success"
+331-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:60:21-53
+332                    android:scheme="stripe-auth" />
+332-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+333                <data
+333-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+334                    android:host="link-accounts"
+334-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+335                    android:path="/com.example.youtube_ecommerce/cancel"
+335-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:60:21-53
+336                    android:scheme="stripe-auth" />
+336-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+337
+338                <!-- Opening app2app: Web flow triggers stripe-auth://native-redirect/{app-id}/http://web-that-redirects-to-native -->
+339                <data
+339-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+340                    android:host="native-redirect"
+340-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+341                    android:pathPrefix="/com.example.youtube_ecommerce"
+342                    android:scheme="stripe-auth" />
+342-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+343
+344                <!-- Accepts success/cancel/fail URIs that begin with "stripe://auth-redirect” -->
+345                <data
+345-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:58:17-61:50
+346                    android:host="auth-redirect"
+346-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:59:21-54
+347                    android:pathPrefix="/com.example.youtube_ecommerce"
+348                    android:scheme="stripe" />
+348-->[com.stripe:payments-core:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4378c7faff2e2eb4d3220071fe179ecb\transformed\jetified-payments-core-20.19.5\AndroidManifest.xml:61:21-47
+349            </intent-filter>
+350        </activity>
+351        <activity
+351-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:65:9-68:57
+352            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetActivity"
+352-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:66:13-101
+353            android:exported="false"
+353-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:67:13-37
+354            android:theme="@style/StripeDefaultTheme" />
+354-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:68:13-54
+355        <activity
+355-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:69:9-73:58
+356            android:name="com.stripe.android.financialconnections.ui.FinancialConnectionsSheetNativeActivity"
+356-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:70:13-110
+357            android:exported="false"
+357-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:71:13-37
+358            android:theme="@style/StripeDefaultTheme"
+358-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:72:13-54
+359            android:windowSoftInputMode="adjustResize" />
+359-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:73:13-55
+360
+361        <provider
+361-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:75:9-79:43
+362            android:name="com.stripe.android.financialconnections.appinitializer.FinancialConnectionsInitializer"
+362-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:76:13-114
+363            android:authorities="com.example.youtube_ecommerce.financialconnections-init"
+363-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:77:13-77
+364            android:exported="false"
+364-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:78:13-37
+365            android:multiprocess="true" />
+365-->[com.stripe:financial-connections:20.19.5] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\fb4121043e0d795186fc7882d8f12090\transformed\jetified-financial-connections-20.19.5\AndroidManifest.xml:79:13-40
+366
+367        <activity
+367-->[com.stripe:stripe-3ds2-android:6.1.7] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\9ba6f2186193e9aec64668e7a7bcd05f\transformed\jetified-stripe-3ds2-android-6.1.7\AndroidManifest.xml:8:9-11:54
+368            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+368-->[com.stripe:stripe-3ds2-android:6.1.7] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\9ba6f2186193e9aec64668e7a7bcd05f\transformed\jetified-stripe-3ds2-android-6.1.7\AndroidManifest.xml:9:13-81
+369            android:exported="false"
+369-->[com.stripe:stripe-3ds2-android:6.1.7] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\9ba6f2186193e9aec64668e7a7bcd05f\transformed\jetified-stripe-3ds2-android-6.1.7\AndroidManifest.xml:10:13-37
+370            android:theme="@style/Stripe3DS2Theme" />
+370-->[com.stripe:stripe-3ds2-android:6.1.7] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\9ba6f2186193e9aec64668e7a7bcd05f\transformed\jetified-stripe-3ds2-android-6.1.7\AndroidManifest.xml:11:13-51
+371
+372        <receiver
+372-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+373            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+373-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+374            android:exported="true"
+374-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+375            android:permission="com.google.android.c2dm.permission.SEND" >
+375-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+376            <intent-filter>
+376-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+377                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+377-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+377-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+378            </intent-filter>
+379        </receiver>
+380        <!--
+381             FirebaseMessagingService performs security checks at runtime,
+382             but set to not exported to explicitly avoid allowing another app to call it.
+383        -->
+384        <service
+384-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+385            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+385-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+386            android:directBootAware="true"
+386-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+387            android:exported="false" >
+387-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ee8a091dda30cf3b61fd7ecb1684fa9e\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+388            <intent-filter android:priority="-500" >
+388-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+389                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+389-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+389-->[:firebase_messaging] C:\Users\ALABOR CLETUS\Desktop\newfolder\E-Commerce-9-Hours\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+390            </intent-filter>
+391        </service>
+392
+393        <provider
+393-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ea39f342bf1645a9d43372302f3d0356\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+394            android:name="com.google.firebase.provider.FirebaseInitProvider"
+394-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ea39f342bf1645a9d43372302f3d0356\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+395            android:authorities="com.example.youtube_ecommerce.firebaseinitprovider"
+395-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ea39f342bf1645a9d43372302f3d0356\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+396            android:directBootAware="true"
+396-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ea39f342bf1645a9d43372302f3d0356\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+397            android:exported="false"
+397-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ea39f342bf1645a9d43372302f3d0356\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+398            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+398-->[com.google.firebase:firebase-common:20.3.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\ea39f342bf1645a9d43372302f3d0356\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+399        <uses-library
+399-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\59cc5571c2bebedf639b6b64d2a139d5\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+400            android:name="org.apache.http.legacy"
+400-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\59cc5571c2bebedf639b6b64d2a139d5\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+401            android:required="false" />
+401-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\59cc5571c2bebedf639b6b64d2a139d5\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+402
+403        <activity
+403-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\e6462e04c24d31fa20570cdf4bb4e1c8\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+404            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+404-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\e6462e04c24d31fa20570cdf4bb4e1c8\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+405            android:exported="false"
+405-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\e6462e04c24d31fa20570cdf4bb4e1c8\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+406            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+406-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\e6462e04c24d31fa20570cdf4bb4e1c8\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+407
+408        <receiver
+408-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:29:9-33:20
+409            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+409-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:30:13-85
+410            android:enabled="true"
+410-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:31:13-35
+411            android:exported="false" >
+411-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:32:13-37
+412        </receiver>
+413
+414        <service
+414-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:35:9-38:40
+415            android:name="com.google.android.gms.measurement.AppMeasurementService"
+415-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:36:13-84
+416            android:enabled="true"
+416-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:37:13-35
+417            android:exported="false" />
+417-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:38:13-37
+418        <service
+418-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:39:9-43:72
+419            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+419-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:40:13-87
+420            android:enabled="true"
+420-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:41:13-35
+421            android:exported="false"
+421-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:42:13-37
+422            android:permission="android.permission.BIND_JOB_SERVICE" />
+422-->[com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\11a67209d929632f45c075a7c866386c\transformed\jetified-play-services-measurement-21.2.1\AndroidManifest.xml:43:13-69
+423
+424        <meta-data
+424-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\75fcb9d3b94cbea09116f268ae351f61\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+425            android:name="com.google.android.gms.version"
+425-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\75fcb9d3b94cbea09116f268ae351f61\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+426            android:value="@integer/google_play_services_version" />
+426-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\75fcb9d3b94cbea09116f268ae351f61\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+427
+428        <uses-library
+428-->[androidx.window:window:1.0.0-beta04] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\2ffb0360d83bab6ed7665e63bcb66d04\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+429            android:name="androidx.window.extensions"
+429-->[androidx.window:window:1.0.0-beta04] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\2ffb0360d83bab6ed7665e63bcb66d04\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+430            android:required="false" />
+430-->[androidx.window:window:1.0.0-beta04] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\2ffb0360d83bab6ed7665e63bcb66d04\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+431        <uses-library
+431-->[androidx.window:window:1.0.0-beta04] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\2ffb0360d83bab6ed7665e63bcb66d04\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+432            android:name="androidx.window.sidecar"
+432-->[androidx.window:window:1.0.0-beta04] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\2ffb0360d83bab6ed7665e63bcb66d04\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+433            android:required="false" />
+433-->[androidx.window:window:1.0.0-beta04] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\2ffb0360d83bab6ed7665e63bcb66d04\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+434
+435        <service
+435-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\0bc8410a98069efd7c63dc5ab9536358\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:25:9-28:40
+436            android:name="androidx.room.MultiInstanceInvalidationService"
+436-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\0bc8410a98069efd7c63dc5ab9536358\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:26:13-74
+437            android:directBootAware="true"
+437-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\0bc8410a98069efd7c63dc5ab9536358\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:27:13-43
+438            android:exported="false" />
+438-->[androidx.room:room-runtime:2.4.0-alpha03] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\0bc8410a98069efd7c63dc5ab9536358\transformed\room-runtime-2.4.0-alpha03\AndroidManifest.xml:28:13-37
+439        <service
+439-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\45217ec45c4acf8a54dfab9b7d7b294d\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+440            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+440-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\45217ec45c4acf8a54dfab9b7d7b294d\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+441            android:exported="false" >
+441-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\45217ec45c4acf8a54dfab9b7d7b294d\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+442            <meta-data
+442-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\45217ec45c4acf8a54dfab9b7d7b294d\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+443                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+443-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\45217ec45c4acf8a54dfab9b7d7b294d\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+444                android:value="cct" />
+444-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\45217ec45c4acf8a54dfab9b7d7b294d\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+445        </service>
+446        <service
+446-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\353ecd05eabefacdf5813068b9fdef81\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+447            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+447-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\353ecd05eabefacdf5813068b9fdef81\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+448            android:exported="false"
+448-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\353ecd05eabefacdf5813068b9fdef81\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+449            android:permission="android.permission.BIND_JOB_SERVICE" >
+449-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\353ecd05eabefacdf5813068b9fdef81\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+450        </service>
+451
+452        <receiver
+452-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\353ecd05eabefacdf5813068b9fdef81\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+453            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+453-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\353ecd05eabefacdf5813068b9fdef81\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+454            android:exported="false" />
+454-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\353ecd05eabefacdf5813068b9fdef81\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+455
+456        <provider
+456-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\48925cbcfbb82f43ff24c8dc7535c8b6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+457            android:name="androidx.startup.InitializationProvider"
+457-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\48925cbcfbb82f43ff24c8dc7535c8b6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+458            android:authorities="com.example.youtube_ecommerce.androidx-startup"
+458-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\48925cbcfbb82f43ff24c8dc7535c8b6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+459            android:exported="false" >
+459-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\48925cbcfbb82f43ff24c8dc7535c8b6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+460            <meta-data
+460-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\48925cbcfbb82f43ff24c8dc7535c8b6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+461                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+461-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\48925cbcfbb82f43ff24c8dc7535c8b6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+462                android:value="androidx.startup" />
+462-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\48925cbcfbb82f43ff24c8dc7535c8b6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+463            <meta-data
+463-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
+464                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+464-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
+465                android:value="androidx.startup" />
+465-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
+466            <meta-data
+466-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\314077501e5d8438940ba8b7526902c8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+467                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+467-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\314077501e5d8438940ba8b7526902c8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+468                android:value="androidx.startup" />
+468-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\314077501e5d8438940ba8b7526902c8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+469        </provider>
+470
+471        <receiver
+471-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
+472            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+472-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
+473            android:directBootAware="false"
+473-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
+474            android:enabled="true"
+474-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
+475            android:exported="true"
+475-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
+476            android:permission="android.permission.DUMP" >
+476-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
+477            <intent-filter>
+477-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
+478                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+478-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
+478-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
+479            </intent-filter>
+480            <intent-filter>
+480-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
+481                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+481-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
+481-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\d85f0c9cd09f3a5e71f038fa5b0e5196\transformed\jetified-profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
+482            </intent-filter>
+483        </receiver>
+484
+485        <meta-data
+485-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4afd836350b81c4b4ee9971b377d0ec1\transformed\jetified-instantapps-1.1.0\AndroidManifest.xml:10:9-12:33
+486            android:name="aia-compat-api-min-version"
+486-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4afd836350b81c4b4ee9971b377d0ec1\transformed\jetified-instantapps-1.1.0\AndroidManifest.xml:11:13-54
+487            android:value="1" />
+487-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\ALABOR CLETUS\.gradle\caches\transforms-3\4afd836350b81c4b4ee9971b377d0ec1\transformed\jetified-instantapps-1.1.0\AndroidManifest.xml:12:13-30
+488    </application>
+489
+490</manifest>

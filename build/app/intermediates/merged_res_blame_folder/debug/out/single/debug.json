@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/drawable-hdpi_splash.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/drawable-hdpi/splash.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/drawable-v21_background.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/drawable-v21/background.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/drawable-xhdpi_splash.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/drawable-xhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/drawable-xxhdpi_splash.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/drawable-xxhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/drawable-xxxhdpi_splash.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/drawable-xxxhdpi/splash.png"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/drawable-v21_launch_background.xml.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "com.example.youtube_ecommerce.app-merged_res-92:/drawable-mdpi_splash.png.flat",
+        "source": "com.example.youtube_ecommerce.app-main-85:/drawable-mdpi/splash.png"
+    }
+]
